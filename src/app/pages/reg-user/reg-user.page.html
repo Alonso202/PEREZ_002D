@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button 
+        defaultHref="/"
+        text="Back"
+        style="color:skyblue"
+        mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="font-variant-position: normal;">Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="background-color: #FBFDFD;" class="fondo">
+  <section>
+    <br><br>
+    <a style="font-size: 20px; color:black;">Ingrese sus datos:</a>
+    <br><br>
+  </section>
+  <form class="fondo" #formulario="ngForm" (ngSubmit) ="onSubmit()">
+    <ion-item>
+      <ion-label style="font-size: 15px;">Nombre: </ion-label>
+      <ion-input style="font-size: 15px;" type="text" placeholder="Nombre" 
+      name="nombre" [(ngModel)]= "usuario.nombre" 
+      pattern="^([a-zA-Z ]+)$" required></ion-input>
+    </ion-item>
+    <ion-item >
+      <ion-label style="font-size: 15px;">Email: </ion-label>
+      <ion-input style="font-size: 15px;" type="email" placeholder="Email"
+                 name="email" [(ngModel)]= "usuario.email"
+                 pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                 required>
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="font-size: 15px;">Password: </ion-label>
+      <ion-input style="font-size: 15px;" type="password" placeholder="Contraseña"
+                 name="password" [(ngModel)]= "usuario.password"
+                 required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label style="font-size: 15px;" >Telefono(+569):</ion-label>
+      <ion-input  style="font-size: 14px;" type="number" placeholder="Numero Telefonico" name="numTel" [(ngModel)]="usuario.numTel" required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Direccion: </ion-label>
+      <ion-input type="text" placeholder="Direccion" name="direc" [(ngModel)]="usuario.direc" required></ion-input>
+      </ion-item>
+      <ion-button [disabled] ="formulario.invalid"
+        type="submit" expand="block" routerLink="/inicio">
+      Registrarse
+    </ion-button>
+
+
+  </form>
+</ion-content>
