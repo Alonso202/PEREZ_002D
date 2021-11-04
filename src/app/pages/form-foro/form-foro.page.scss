@@ -1,0 +1,57 @@
+.fondo{
+    --ion-background-color: #a3ffff ;}
+ion-title{
+        font-family: Arial;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        font-size: 35px; 
+        color:black; 
+      }
+
+.letraForm{
+    font-family: Arial;
+    font-size: 15px;
+    color: white;
+}
+ion-item{
+    width: 100%;
+    height: 60px;
+}
+.form-register{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+ion-card{
+    width: 90%;
+    height: 80%;
+    margin-top: 40px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+ion-button{
+
+    
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ultimoLabel{
+    margin-bottom: 80px;
+}
+ion-input{
+    color:white;
+    font-size: 90%;
+}
+.fondo{--ion-background-color: #a3ffff ;}

@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-title>Clear Water</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Inicio de Sesión</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form class ="form-login" #formulario="ngForm" >
+      <ion-item >
+        
+        <ion-input [(ngModel)]= "usuario.email" class="letraform" type="email" placeholder="Ingrese Email" minlength="8"
+                  name="email" 
+                  pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                  required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+    
+        <ion-input class="letraform" [(ngModel)]= "usuario.password" type="password" placeholder="Ingrese Contraseña"
+                  name="password"  minlength="6"
+                  required>
+        </ion-input>
+      </ion-item>
+      <ion-button [disabled] ="formulario.invalid" (click)="validar()" expand="block" >Iniciar Sesión</ion-button>
+      <ion-buttons>
+        <ion-button  class=" boton" slot="start" routerLink="/form-reg">Registro de usuario</ion-button>
+      </ion-buttons>
+      </form>
+  </ion-card-content>
+</ion-card>
+
+</ion-content>

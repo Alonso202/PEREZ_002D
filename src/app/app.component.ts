@@ -15,14 +15,23 @@ export class AppComponent {
   componentes : Componente[] =[
     {
       icon: 'person-add-outline',
-      name: 'Registro de Ususario', 
-      redirecTo: '/reg-user'
+      name: 'Inicio de Sesión', 
+      redirecTo: '/login'
     },
     {
       icon: 'water-outline', 
       name: 'Descripción', 
       redirecTo: '/descripcion'
     },
-   
+    {
+      icon: 'newspaper-outline',
+      name: 'Noticias',
+      redirecTo: '/noticias-agua'
+    },
+    {
+      icon: 'people-circle-outline',
+      name: 'Comunidad',
+      redirecTo: '/foro'
+    }
   ]
 }

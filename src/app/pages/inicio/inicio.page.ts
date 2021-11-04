@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuController } from '@ionic/angular';
+import { MenuController, NavController } from '@ionic/angular';
 
 interface Componente{
   icon: string;
@@ -30,11 +30,15 @@ export class InicioPage implements OnInit {
   ]
 
 
-  constructor(private menuController: MenuController) { }
+  constructor(private menuController: MenuController,public navCtrl : NavController) { }
 
   ngOnInit() {
   }
   mostrarMenu(){
     this.menuController.open('first');
   }
-}
+  cerrarSesion(){
+    localStorage.removeItem('ingresado')
+    this.navCtrl.navigateRoot('login');}
+  }
+

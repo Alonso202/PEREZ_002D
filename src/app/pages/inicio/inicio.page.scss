@@ -1,18 +1,25 @@
 .boton{
     
-    --ion-color-primary:#B0E0E6;
+    --ion-color-primary:#a1cbd1;
     --ion-text-align:center;
     
 }
-
-ion-img{
-    width : 200px;
-    font-size: 200px;
+ion-content{
+    position: relative;
 }
-.fondo{--ion-background-color: #FBFDFD ;}
-.img{
-    height: 70vh;
-    width: auto;
-    margin: auto;
+ion-img{
+    max-width: 500px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.fondo{--ion-background-color: #a3ffff ;}
+
+  ion-title{
+    font-family: Arial;
     display: block;
-  }
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
