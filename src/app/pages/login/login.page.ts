@@ -21,6 +21,7 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
   }
+  
   validar(){
     this.storageService.getUsuarios().then(usuarios=>{
       this.usuarios = usuarios; 
