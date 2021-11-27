@@ -14,24 +14,24 @@
 <ion-content class="fondo">
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Publique en el foro</ion-card-title>
-      <ion-card-subtitle>Complete los campos</ion-card-subtitle>
+      <ion-card-title class="letra">Publique en el foro</ion-card-title>
+      <ion-card-subtitle class="letra2">Complete los campos</ion-card-subtitle>
       
     </ion-card-header>
     <ion-card-content >
-      <form class="form_contac fondo" #formulario="ngForm" >
-        <ion-item>
-          <ion-input type="text" placeholder="Tema a publicar" minlength="4" name="tema" [(ngModel)]="newDato.tema"  pattern="^([a-zA-Z ]+)$" required></ion-input>
-        </ion-item>
-        <ion-item>
+      <form class="form-register fondo" #formulario="ngForm" >
+        
+          <ion-input   type="text" placeholder="Tema a publicar" minlength="4" name="tema" [(ngModel)]="newDato.tema"  pattern="^([a-zA-Z ]+)$" required></ion-input>
+        
+        
           <ion-input type="text" placeholder="Titulo de publicación" minlength="4" name="titulo" [(ngModel)]="newDato.titulo"  pattern="^([a-zA-Z0-9 ]+)$" required></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-input type="text" placeholder="Autor de publicación" minlength="4" name="titulo" [(ngModel)]="newDato.Autor"  pattern="^([a-zA-Z0-9 ]+)$" required></ion-input>
-        </ion-item>
-        <ion-item class="ultimoLabel">
+        
+   
+          <ion-input type="text" placeholder="Autor de publicación" minlength="4" name="titulo" [(ngModel)]="newDato.autor"  pattern="^([a-zA-Z0-9 ]+)$" required></ion-input>
+     
+        
           <ion-input type="text" placeholder="Mensaje a publicar" minlength="4" name="mensaje" [(ngModel)]="newDato.mensaje"   required></ion-input>
-        </ion-item>
+        
         <ion-button (click)="addDatos()" [disabled] ="formulario.invalid"type="submit" expand="block">Realizar publicación</ion-button>
       </form>
     </ion-card-content> 

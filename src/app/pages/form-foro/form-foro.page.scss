@@ -32,7 +32,16 @@ ion-item{
     margin-right: auto;
     
 }
+.letra{
+    color: white;
+}
+.letra2{
+    color: rgb(160, 156, 156);
+}
+
 ion-card{
+    
+    background-color: #3f3f3f;
     width: 90%;
     height: 80%;
     margin-top: 40px;
@@ -40,18 +49,21 @@ ion-card{
     margin-left: auto;
     margin-right: auto;
 }
-ion-button{
-
-    
+ion-button{  
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10%;
 }
 .ultimoLabel{
     margin-bottom: 80px;
 }
 ion-input{
-    color:white;
+    
     font-size: 90%;
+    --placeholder-color: black; 
+    background-color: white;
+    margin-bottom: 2%;
 }
+
 .fondo{--ion-background-color: #a3ffff ;}

@@ -14,11 +14,6 @@ export class AppComponent {
   constructor() {}
   componentes : Componente[] =[
     {
-      icon: 'person-add-outline',
-      name: 'Inicio de Sesión', 
-      redirecTo: '/login'
-    },
-    {
       icon: 'water-outline', 
       name: 'Descripción', 
       redirecTo: '/descripcion'

@@ -7,17 +7,35 @@ ion-card{
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #3f3f3f;
+    color:white;
+    
 }
-ion-cardion-card-header{
+ion-card-title{
+    font-family: Arial;
+    font-size: 100%;
+    color: white;
+}
+ion-card-header{
     font-size: 25px;
     font-family: Arial;
     color: white;
     
 }
+ion-card-subtitle{
+    font-family: Arial;
+    font-size: 70%;
+    color: rgb(184, 179, 179);
+}
 ion-button{
     font-size:70%;
     color:#a3ffff;
     
+}
+ion-card-content{
+    font-family: Arial;
+    color: white;
+    font-size: 40%;
 }
 ion-title{
     font-size: 90%;

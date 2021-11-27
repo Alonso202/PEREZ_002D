@@ -7,9 +7,9 @@
       </ion-toolbar>
     </ion-header>
 
-    <ion-content>
+    <ion-content >
       <ion-list>
-        <ion-menu-toggle *ngFor="let c of componentes">
+        <ion-menu-toggle style="background-color: #3f3f3f;" *ngFor="let c of componentes">
           <ion-item [routerLink]="c.redirecTo"
                   detail=true>
           <ion-icon [name]="c.icon" slot="start" style="color:skyblue"></ion-icon>
